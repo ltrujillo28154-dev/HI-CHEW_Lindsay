@@ -1,0 +1,235 @@
+body {
+  font-family: 'Bungee', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 400vh;
+  width: 100%;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/60396f96850ec23560aa0501/1616028664143-HHBGHWI93DMJ42YE65EC/HOME+1.png?format=2500w");
+  background-position: center;
+  background-size: cover;
+  padding: 0 5%;
+  position: relative;
+  animation: moveBg 30s linear infinite;
+}
+
+@keyframes moveBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 180px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #5493ab;
+  transition: color 0.3s ease;
+}
+
+.fa-cart-plus {
+  font-size: 32px;
+  color: #FFE45E;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.fa-cart-plus:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.content {
+  max-width: 700px;
+  margin-top: 80px;
+  color: #1b1b1b;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  color: #1b1b1b;
+  line-height: 1.1;
+}
+
+h1 .style {
+  color: #F9C80E;
+  font-size: 90px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 25px;
+  color: #450920;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #EFEA5A;
+  margin-top: 60px;
+  padding: 15px 45px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 3px 8px 22px rgba(22, 21, 21, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #A4036F;
+}
+
+.social-media {
+  margin-top: -40px;
+  margin-left: 200px;
+  font-size: 27px;
+}
+
+.icons {
+  color: #F9C80E;
+  padding: 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: 3px 8px 22px rgba(22, 21, 21, 0.15);
+  transition: all 0.3s ease;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #F9C80E;
+}
+
+.image {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+  width: 25%;
+  height: auto;
+  transform: rotate(7deg);
+}
+
+/*---------Products Page--------*/
+
+.product-grid {
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  margin-top:60px;
+}
+
+.product-card {
+  background:#fff;
+  width:280px;
+  padding:20px;
+  margin:15px;
+  text-align:center;
+  border-radius:20px;
+  box-shadow: 3px 8px 22px rgba(22,21,21,.15);
+  transition:transform 0.5s;
+}
+
+.product-card:hover {
+  transform:scale(1.05);
+}
+
+.product-card img {
+  width:100%;
+  border-radius:15px;
+}
+
+.product-card h3 {
+  margin-top:15px;
+  font-size:20px;
+  color:#1b1b1b;
+}
+
+/*---------Contact Page--------*/
+.contact-form {
+  margin-top:50px;
+  width:50%
+}
+
+.contact-form input,
+.contact-form textarea {
+  width:100%;
+  padding:12px;
+  margin-bottom:20px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:16px;
+  box-shadow: 3px 8px 22px rgba(22,21,21,.05);
+}
+
+.contact-form input:focus
+.contact-form textarea:focus {
+  outline:none;
+  border-color:#5493ab;
+  box-shadow:0 0 8px rgba(84,147,171,.5);
+}
+
+nav ul li .active {
+  color:#5493ab;
+  border-bottom:2px solid #5493ab;
+}
+
+
